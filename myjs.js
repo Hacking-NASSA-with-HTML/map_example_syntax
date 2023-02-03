@@ -9,11 +9,11 @@ function prepareProjects() {
 
     projects.map(project => {
         if (project.length > 20) {
-            const para = document.createElement("p")
+            const paragraph = document.createElement("p")
             const br = document.createElement("br")
-            para.innerText = project
-            para.appendChild(br)
-            tags.push(para)
+            paragraph.innerText = project
+            paragraph.appendChild(br)
+            tags.push(paragraph)
         } else {
             const span = document.createElement("span")
             const br = document.createElement("br")
